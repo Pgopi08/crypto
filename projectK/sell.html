@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sell Crypto</title>
+	<link rel="stylesheet" type="text/css" href="sell.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Sell Crypto</h1>
+		<form action="sell.php" method="post">
+			<label for="coin">Select a Coin:</label>
+			<select name="coin" id="coin">
+				<option value="BTC">Bitcoin</option>
+				<option value="ETH">Ethereum</option>
+				<option value="LTC">Litecoin</option>
+			</select>
+			<label for="amount">Amount:</label>
+			<input type="text" id="amount" name="amount">
+			<label for="payment_method">Payment Method:</label>
+			<select name="payment_method" id="payment_method">
+				<option value="credit_card">Credit Card</option>
+				<option value="bank_transfer">Bank Transfer</option>
+				<option value="paypal">PayPal</option>
+			</select>
+			<input type="submit" value="Sell">
+		</form>
+	</div>
+</body>
+</html>
